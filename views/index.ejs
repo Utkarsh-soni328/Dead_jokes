@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+    <title>Document</title>
+</head>
+<body class="bg-black">
+    <h1 class="text-yellow-300 ">Today's joke</h1>
+    <div class="bg-slate-500">
+        <!-- categories of joke -->
+        <form action="/getselected" method="post">
+            <label for="">choose category of joke</label>
+            <select name="type"  id="">
+           <option value="Dark">Dark</option>
+           <option value="Misc">Miscellaneous</option>
+           <option value="Programming">Programming</option>
+           <option value="Pun">Pun</option>
+           <option value="spooky">spooky</option>
+           <option value="Christmas">Christmas</option>
+            </select>
+            <select name="lang"  id="">
+                <option value="en">English</option>
+                <option value="de" >German</option>
+                <option value="cs">Czech</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="pt">portuguese</option>
+                 </select>  
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    <% if(locals.joke&&locals.question){ %>
+    <Div>
+       <h1><%=category %></h1> 
+        <%=question %>
+    </Div>
+    <div>
+        <%=joke  %>
+    </div>
+    <% } %>
+   <div>
+    <h1>Wanna share a joke?</h1>
+<form action="/submit" method="post">
+    <input name="title" type="text">
+    <br><textarea name="contents" id="" cols="30" rows="10">please write your joke</textarea>
+    <button type="submit">submit</button>
+</form>
+<h1 class="text-red-50">My collections</h1>
+<form action="/getall" method="post">
+
+<% if(locals.myjoke){ 
+    myjoke.forEach(myFunction);
+
+function myFunction(item) {
+ %>
+    <%= item.contents %> <br>
+    <% }} %>
+    <button type="submit">getjoke</button>
+</form>
+   
+   
+</body>
+</html>
