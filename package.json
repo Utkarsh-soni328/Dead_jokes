@@ -8,7 +8,7 @@
     "node": "18.x"
   },
   "scripts": {
-    "tailwind:css": "postcss public/tailwind.css -o public/style.css"
+    "start": "postcss public/tailwind.css -o public/style.css && nodemon index.js"
   },
   "author": "",
   "license": "ISC",
