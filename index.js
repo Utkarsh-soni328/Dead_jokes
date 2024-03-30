@@ -2,7 +2,11 @@ import express from 'express'
 import axios from 'axios';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import path from 'path'
 import bodyParser from 'body-parser';
+import { fileURLToPath } from 'url'; // Import fileURLToPath function
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const port=3000;
 const app=express();
 const API_URL="https://v2.jokeapi.dev/joke/";
@@ -14,8 +18,9 @@ app.listen(port,()=>{
     console.log("listening ");
 })
 //design files
-app.use(express.static('public'));
-
+app.use(express.static(path.join(__dirname, "public")));
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 //db connection
 console.log(process.env.CONNECTION_STRING);
  mongoose.connect(process.env.CONNECTION_STRING,{
