@@ -31,9 +31,9 @@ To get started with Laughtale:
 
 Contributions are welcome! If you have ideas for new features or improvements, feel free to submit a pull request.
 
-## Contact
+## LinkedIn
 
-For any inquiries or feedback, please contact us at [contact@example.com](mailto:https://www.linkedin.com/in/utkarsh-soni-75390321b/).
+For any suggestions,inquiries or feedback, please connect with linkedin [Utkarsh soni](https://www.linkedin.com/in/utkarsh-soni-75390321b/).
 
 ---
 
