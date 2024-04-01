@@ -4,12 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css" >
-    <title>dad_jokes.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Kanit&family=Libre+Baskerville&family=Merriweather&family=Mogra&display=swap" rel="stylesheet">
+    <title>Laughtale</title>
+    <style>
+      /* Additional CSS for styling the title */
+      #first {
+  background-image: linear-gradient(to right top, #98d16b, #a9d46e, #b8d772, #c7d977, #d5dc7d, #d4e07f, #d3e381, #d2e784, #beec87, #a6f28d, #89f798, #5ffba7);
+  /* Add other necessary styles for the hero section */
+}
+      .title {
+            font-family: 'Fugaz One', sans-serif; /* Changed font-family */
+            font-size: 3em;
+            margin-top: 20px;
+            color: #e53e3e; /* Playful Red title color */
+        }
+        /* Additional CSS for body background */
+        body {
+            background-color: #f3f4f6; /* Light Gray background */
+            color: #333333; /* Dark Gray text color */
+        }
+
+        /* Additional CSS for header/footer background */
+        footer,
+        header {
+            background-color: #f6e05e; /* Vibrant Yellow background */
+        }
+
+        /* Additional CSS for section backgrounds */
+        #first,
+        section,
+        #my-collections {
+            background-color: #f6e05e; /* Vibrant Yellow background */
+        }
+
+        /* Additional CSS for feature section background */
+        .bg-gray-200 {
+            background-color: #f6ad55; /* Bright Orange background */
+        }
+    </style>
+  </style>
 </head>
-<body >
+<body class="bg-gray-100">
+  <h1 class="title text-4xl lg:text-6xl font-bold text-center  mb-8">Laughtale</h1>
+
     <!-- hero section -->
-    <section id="first" class="text-gray-600 body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <section id="first" class="text-gray-600 body-font bg-gradient-to-r from-indigo-100 to-indigo-200">
+      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img class="object-cover object-center rounded" alt="hero" src="/hero.jpg">
           </div>
@@ -18,18 +60,17 @@
             </h1>
             <p class="mb-8 leading-relaxed">Welcome to the ultimate destination for all things funny! Whether you're looking for witty one-liners, hilarious anecdotes, or side-splitting memes, you've come to the right place. Our curated collection of jokes guarantees endless amusement for everyone. Join us in spreading joy, one laugh at a time!</p>
             <div class="flex justify-center">
-             <a href="#"> <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button></a>
-              <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+             <a href="#third"> <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Jokes</button></a>
+              <a href="#fourth"><button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">share your jokes</button></a>
             </div>
           </div>
         </div>
       </section>
 
  <!-- features -->
-    <section class="text-gray-600 body-font">
+ <section id="second" class="text-gray-600 body-font bg-gray-200">
         <div class="container px-5 py-24 mx-auto">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">Raw Denim Heirloom Man Braid
-            <br class="hidden sm:block">Selfies Wayfarers
+          <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">Features 
           </h1>
           <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
             <div class="p-4 md:w-1/3 flex">
@@ -37,11 +78,8 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M25.5 21a4.49 4.49 0 0 0-3.22 1.37h-.06l-11.38-5.7A4.67 4.67 0 0 0 11 15.5a4.5 4.5 0 0 0-.28-1.5l10.81-5.43A4.46 4.46 0 1 0 21 6.5v.1L9.78 12.22a1.25 1.25 0 0 0-.12.08 4.51 4.51 0 1 0 .25 6.11l11.34 5.67A4.46 4.46 0 0 0 21 25.5a4.5 4.5 0 1 0 4.5-4.5zm0-17A2.5 2.5 0 1 1 23 6.5 2.5 2.5 0 0 1 25.5 4zm-19 14A2.5 2.5 0 1 1 9 15.5 2.5 2.5 0 0 1 6.5 18zm19 10a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5z" style="fill:#231f20"/></svg>
               </div>
               <div class="flex-grow pl-6">
-                <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Shooting Stars</h2>
-                <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
-                <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
-                 
-                </a>
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Open Joke Sharing Platform</h2>
+                <p class="leading-relaxed text-base"> Laughtale offers an open joke-sharing platform where users can freely share their favorite jokes with the entire community. There are no restrictions on who can view or share jokes, fostering inclusivity and a sense of belonging among users. Whether you're a seasoned comedian or just someone who loves a good laugh, everyone is welcome to contribute and enjoy the laughter. Users can submit their jokes, browse through a diverse collection of humorous content, and engage with fellow joke enthusiasts from around the world. This open sharing model encourages creativity, diversity, and a constant stream of laughter, making Laughtale a go-to destination for comedy lovers everywhere.</p>
               </div>
             </div>
             <div class="p-4 md:w-1/3 flex">
@@ -49,9 +87,9 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><defs><style>.cls-2{fill:#273941}.cls-4{fill:#f6fafd}.cls-6{fill:#ffb32b}.cls-9{fill:#3bc5f6}.cls-10{fill:#00a3e1}.cls-11{fill:#ffc943}</style></defs><g id="_18-laughing" data-name="18-laughing"><circle cx="24" cy="24" r="23" style="fill:#ffce52"/><path class="cls-2" d="M37.553 20.9C35.764 20 33.717 20 30 20a1 1 0 0 1-1-1c0-2.265 3.568-5 8-5v2a7.807 7.807 0 0 0-5.419 2c3.058.018 4.963.151 6.866 1.1zM10.447 20.9l-.894-1.79c1.9-.951 3.808-1.084 6.866-1.1A7.807 7.807 0 0 0 11 16v-2c4.432 0 8 2.735 8 5a1 1 0 0 1-1 1c-3.717 0-5.764 0-7.553.9z"/><path d="M35.2 26H38c0 8.36-6.53 13-14 13a14.971 14.971 0 0 1-9.8-3.36A12.283 12.283 0 0 1 10 26h2.8c0 3.87 5.01 7 11.2 7s11.2-3.13 11.2-7z" style="fill:#ae2d4c"/><path class="cls-4" d="M12.8 26h22.4c0 3.87-5.01 7-11.2 7s-11.2-3.13-11.2-7z"/><path d="M24 4c12.15 0 22 8.507 22 19h.975a23 23 0 0 0-45.95 0H2C2 12.507 11.85 4 24 4z" style="fill:#ffe369"/><path class="cls-6" d="M46 23c0 10.493-9.85 19-22 19S2 33.493 2 23h-.975c-.014.332-.025.665-.025 1a23 23 0 0 0 46 0c0-.335-.011-.668-.025-1z"/><ellipse class="cls-4" cx="37" cy="9" rx=".825" ry="1.148" transform="rotate(-45.02 37 9)"/><ellipse class="cls-4" cx="30.746" cy="4.5" rx=".413" ry=".574" transform="rotate(-45.02 30.745 4.5)"/><ellipse class="cls-4" cx="34" cy="7" rx="1.65" ry="2.297" transform="rotate(-45.02 34 7)"/><path d="M35.2 26c0 3.87-5.01 7-11.2 7s-11.2-3.13-11.2-7H12c0 4.976 5.368 9 12 9s12-4.024 12-9z" style="fill:#8a293d"/><path d="M35.2 26H12.8a4.622 4.622 0 0 0 .469 2h21.462a4.622 4.622 0 0 0 .469-2z" style="fill:#ededed"/><path class="cls-9" d="M46.044 22.429a3.263 3.263 0 0 1-4.615 4.615c-1.275-1.274-2.885-6.346-2.308-6.923s5.649 1.033 6.923 2.308zM1.956 22.429a3.263 3.263 0 0 0 4.615 4.615c1.275-1.274 2.885-6.344 2.308-6.923s-5.649 1.033-6.923 2.308z"/><path class="cls-10" d="M46.044 22.428c-1.12-1.12-5.173-2.5-6.529-2.424a10.448 10.448 0 0 1 4.768 1.817 2.448 2.448 0 0 1-3.462 3.462A10.453 10.453 0 0 1 39 20.515c-.075 1.355 1.3 5.408 2.425 6.529a3.264 3.264 0 1 0 4.615-4.616zM3.717 25.283a2.448 2.448 0 0 1 0-3.462A10.448 10.448 0 0 1 8.485 20c-1.356-.075-5.409 1.3-6.529 2.424a3.264 3.264 0 0 0 4.615 4.616c1.121-1.117 2.5-5.17 2.429-6.525a10.453 10.453 0 0 1-1.817 4.768 2.448 2.448 0 0 1-3.466 0z"/><ellipse class="cls-4" cx="45" cy="23" rx=".825" ry="1.148" transform="rotate(-45.02 45 23)"/><ellipse class="cls-4" cx="44.746" cy="24.5" rx=".413" ry=".574" transform="rotate(-45.02 44.745 24.5)"/><ellipse class="cls-4" cx="3" cy="23" rx="1.148" ry=".825" transform="rotate(-44.98 3 23)"/><ellipse class="cls-4" cx="3.254" cy="24.5" rx=".574" ry=".413" transform="rotate(-44.98 3.254 24.5)"/><path class="cls-11" d="M41.429 27.044a13.329 13.329 0 0 1-2.206-4.977.328.328 0 0 0-.1.054c-.577.577 1.033 5.649 2.308 6.923a3.249 3.249 0 0 0 3.069.856 17.065 17.065 0 0 0 .862-2.346 3.255 3.255 0 0 1-3.933-.51z"/><path class="cls-6" d="M46.829 25.736a3.069 3.069 0 0 1-1.469 1.817 17.065 17.065 0 0 1-.86 2.347 3.2 3.2 0 0 0 2.091-1.581q.213-1.12.316-2.277c-.025-.103-.046-.206-.078-.306z"/><path class="cls-11" d="M6.571 29.044c1.275-1.274 2.885-6.344 2.308-6.923a.328.328 0 0 0-.1-.054 13.329 13.329 0 0 1-2.206 4.977 3.255 3.255 0 0 1-3.931.509A17.065 17.065 0 0 0 3.5 29.9a3.249 3.249 0 0 0 3.071-.856z"/><path class="cls-6" d="M3.5 29.9a17.065 17.065 0 0 1-.862-2.346 3.069 3.069 0 0 1-1.469-1.817c-.032.1-.053.2-.076.3q.1 1.157.316 2.277A3.2 3.2 0 0 0 3.5 29.9z"/></g></svg>
               </div>
               <div class="flex-grow pl-6">
-                <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The Catalyzer</h2>
-                <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
-                <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Curated Joke Collection</h2>
+                <p class="leading-relaxed text-base"> Laughtale offers a meticulously curated collection of jokes spanning various categories like Dark, Miscellaneous, Programming, Pun, Spooky, and Christmas. Users can easily navigate through these categories to find jokes tailored to their preferences, ensuring a wide range of humor for everyone.</p>
+                <a class="mt-3 text-indigo-500 inline-flex items-center" href="#third">Get
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
@@ -66,9 +104,9 @@
                 </svg>
               </div>
               <div class="flex-grow pl-6">
-                <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Neptune</h2>
-                <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
-                <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-2">User-Submitted Jokes</h2>
+                <p class="leading-relaxed text-base">Users have the opportunity to actively participate in the community by sharing their own jokes. Laughtale provides a submission form where users can input their username and joke, fostering a sense of engagement and interaction among visitors. This feature adds a dynamic element to the site, allowing fresh content to be continuously added by the community.</p>
+                <a class="mt-3 text-indigo-500 inline-flex items-center" href="#fourth">submit your joke
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
@@ -83,78 +121,87 @@
    
 
       <!-- getjoke -->
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-            <form action="/getselected" method="post">
-                <label for=""><h1>choose category of joke</h1></label>
-                <select name="type"  id="">
-               <option value="Dark">Dark</option>
-               <option value="Misc">Miscellaneous</option>
-               <option value="Programming">Programming</option>
-               <option value="Pun">Pun</option>
-               <option value="spooky">spooky</option>
-               <option value="Christmas">Christmas</option>
+      <section id="third" class="text-gray-600 body-font ">
+        <div class="container px-5 py-12 mx-auto bg-white rounded-lg shadow-md">
+            <form action="/getselected#third" method="post" class="mb-8 text-center">
+                <label for="category" class="block text-lg font-medium text-gray-700 mb-2">Choose a category of joke:</label>
+                <select name="type" id="category" class="w-full bg-white border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500">
+                    <option value="Dark">Dark</option>
+                    <option value="Misc">Miscellaneous</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Pun">Pun</option>
+                    <option value="spooky">Spooky</option>
+                    <option value="Christmas">Christmas</option>
                 </select>
-                <select name="lang"  id="">
+                <label for="language" class="block text-lg font-medium text-gray-700 mt-4 mb-2">Choose a language:</label>
+                <select name="lang" id="language" class="w-full bg-white border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500">
                     <option value="en">English</option>
-                    <option value="de" >German</option>
+                    <option value="de">German</option>
                     <option value="cs">Czech</option>
                     <option value="es">Spanish</option>
                     <option value="fr">French</option>
-                    <option value="pt">portuguese</option>
-                     </select>  
-                <button type="submit">submit</button>
+                    <option value="pt">Portuguese</option>
+                </select>
+                <button type="submit" class="mt-6 inline-flex items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Submit</button>
             </form>
-             <div>
-                    <% if(locals.joke&&locals.question){ %>
-                    <Div>
-                        <h1><%=category %></h1> 
-                        <%=question %><
-                    </Div>
-                    <div>
-                        <%=joke  %>
+            <div class="text-center bg-slate-400">
+                <% if(locals.joke && locals.question) { %>
+                    <div class="bg-gray-200 rounded-md p-4 mb-4">
+                        <h2 class="text-xl font-semibold mb-2"><%= category %></h2> 
+                        <p class="text-lg mb-4"><%= question %></p>
                     </div>
-                    <% } %>
-               <div>
-          </div>
+                    <div class="bg-gray-200 rounded-md p-4">
+                        <p class="text-xl"><%= joke %></p>
+                    </div>
+                <% } %>
+            </div>
         </div>
-      </section>
+    </section>
+    
+    
       
       <!-- submit your jokes -->
-<div>
-    <h1>Wanna share a joke?</h1>
-<form action="/submit" method="post">
-    <input name="title" type="text">
-    <br><textarea name="contents" id="" cols="30" rows="10" class="w-auto">please write your joke</textarea><br>
-    <button type="submit">submit</button>
-</form>
-
-</div>
+      <div id="fourth" class="max-w-lg mx-auto bg-white mt-10 shadow-md p-8 rounded-lg">
+        <h1 class="text-2xl font-bold mb-4">Wanna share a joke?</h1>
+        <form action="/submit#fourth" method="post" class="mb-4">
+            <label for="title" class="block text-gray-700 font-medium mb-2">Username:</label>
+            <input name="title" type="text" id="title" class="w-full bg-gray-100 border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500 mb-3">
+    
+            <label for="contents" class="block text-gray-700 font-medium mb-2">Joke:</label>
+            <textarea name="contents" id="contents" cols="30" rows="5" class="w-full resize-none bg-gray-100 border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500 mb-3">Please write your joke</textarea>
+    
+            <button type="submit" class="bg-indigo-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:bg-indigo-700 transition duration-300 ease-in-out">Submit</button>
+        </form>
+    </div>
+    
       
 <!-- get collection of jokes -->
-<section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
-        <h1>My collections</h1>
-<form action="/getall" method="post">`
-
-<% if(locals.myjoke){ 
-    myjoke.forEach(myFunction);
-
-function myFunction(item) {
- %>
-    <%= item.contents %> <br>
-    <% }} %>
-    <button type="submit">getjoke</button>
-</form>
-
-        <button class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0">Button</button>
-      </div>
+<section id="fifth" class="text-gray-600 body-font bg-gray-100">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="lg:w-2/3 mx-auto">
+      <h1 class="text-4xl font-bold mb-8 text-center">My Collections</h1>
+      <form action="/getall#fifth" method="post" class="flex justify-center mb-8">
+        <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:bg-indigo-700 transition duration-300 ease-in-out">Get Jokes</button>
+      </form>
+      <% if(locals.myjoke) { %>
+        <div class="w-full bg-gray-100 border border-gray-300 rounded-md p-4">
+          <% myjoke.forEach(item => { %>
+            <p class="mb-4 text-center"><%= item.contents %></p>
+          <% }) %>
+        </div>
+      <% } else { %>
+        <p class="text-center">No jokes found.</p>
+      <% } %>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
+
 
       <!-- footer -->
-      <footer class="text-gray-600 body-font">
+      <footer class="text-gray-600 body-font bg-gray-200">
         <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
