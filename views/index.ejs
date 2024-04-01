@@ -10,9 +10,8 @@
     <title>Laughtale</title>
     <style>
       /* Additional CSS for styling the title */
-      #first {
-  background-image: linear-gradient(to right top, #98d16b, #a9d46e, #b8d772, #c7d977, #d5dc7d, #d4e07f, #d3e381, #d2e784, #beec87, #a6f28d, #89f798, #5ffba7);
-  /* Add other necessary styles for the hero section */
+      #first,body,.bg-2{
+  background-image: linear-gradient(to right top, #e8fc39, #d1fd2e, #b8fd27, #9bfd24, #78fd28, #5ffe4b, #41ff65, #00ff7b, #00ffa0, #00ffbf, #2dfed7, #5ffbe8)
 }
       .title {
             font-family: 'Fugaz One', sans-serif; /* Changed font-family */
@@ -32,25 +31,26 @@
             background-color: #f6e05e; /* Vibrant Yellow background */
         }
 
-        /* Additional CSS for section backgrounds */
-        #first,
-        section,
-        #my-collections {
-            background-color: #f6e05e; /* Vibrant Yellow background */
-        }
-
+        
         /* Additional CSS for feature section background */
-        .bg-gray-200 {
-            background-color: #f6ad55; /* Bright Orange background */
-        }
-    </style>
+       
+          footer{
+            background-image: linear-gradient(to right top, #494df4, #0084ff, #009ce0, #00a981, #1aad18);
+          }
+
+          .bg-3{
+            background-color: #E1F8D4;
+          }
+              </style>
   </style>
 </head>
 <body class="bg-gray-100">
-  <h1 class="title text-4xl lg:text-6xl font-bold text-center  mb-8">Laughtale</h1>
-
+  
     <!-- hero section -->
+    
     <section id="first" class="text-gray-600 body-font bg-gradient-to-r from-indigo-100 to-indigo-200">
+      <h1 class="title text-4xl lg:text-6xl font-bold text-center  mb-8">Laughtale</h1>
+<marquee behavior="" direction="">"A day without laughter is a day wasted." - Charlie Chaplin</marquee>
       <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img class="object-cover object-center rounded" alt="hero" src="/hero.jpg">
@@ -59,16 +59,16 @@
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Get Ready to Burst into Laughter!
             </h1>
             <p class="mb-8 leading-relaxed">Welcome to the ultimate destination for all things funny! Whether you're looking for witty one-liners, hilarious anecdotes, or side-splitting memes, you've come to the right place. Our curated collection of jokes guarantees endless amusement for everyone. Join us in spreading joy, one laugh at a time!</p>
+            
             <div class="flex justify-center">
              <a href="#third"> <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Jokes</button></a>
-              <a href="#fourth"><button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">share your jokes</button></a>
+              <a href="#fourth"><button class="ml-4 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">share your jokes</button></a>
             </div>
           </div>
         </div>
-      </section>
+     
 
  <!-- features -->
- <section id="second" class="text-gray-600 body-font bg-gray-200">
         <div class="container px-5 py-24 mx-auto">
           <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">Features 
           </h1>
@@ -116,19 +116,20 @@
           </div>
         </div>
       </section>
-
    
    
 
-      <!-- getjoke -->
-      <section id="third" class="text-gray-600 body-font ">
-        <div class="container px-5 py-12 mx-auto bg-white rounded-lg shadow-md">
+      <div class="bg-3">
+        <!-- getjoke -->
+       <div id="third" class="text-gray-600 body-font ">
+        <div class=" px-5 py-12 mx-auto rounded-lg ">
             <form action="/getselected#third" method="post" class="mb-8 text-center">
                 <label for="category" class="block text-lg font-medium text-gray-700 mb-2">Choose a category of joke:</label>
+                <p>There is a restriction on no of requests per minute , so if your joke does not load up try again else the joke of that category is not available due public policies</p>
                 <select name="type" id="category" class="w-full bg-white border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500">
                     <option value="Dark">Dark</option>
                     <option value="Misc">Miscellaneous</option>
-                    <option value="Programming">Programming</option>
+                    <option value="Programming" selected>Programming</option>
                     <option value="Pun">Pun</option>
                     <option value="spooky">Spooky</option>
                     <option value="Christmas">Christmas</option>
@@ -144,26 +145,27 @@
                 </select>
                 <button type="submit" class="mt-6 inline-flex items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Submit</button>
             </form>
-            <div class="text-center bg-slate-400">
+            <div class="text-center text-black ">
                 <% if(locals.joke && locals.question) { %>
-                    <div class="bg-gray-200 rounded-md p-4 mb-4">
+                    <div class="bg-gray-300 rounded-md p-4 mb-4">
                         <h2 class="text-xl font-semibold mb-2"><%= category %></h2> 
                         <p class="text-lg mb-4"><%= question %></p>
                     </div>
-                    <div class="bg-gray-200 rounded-md p-4">
+                    <div class="bg-gray-300 rounded-md p-4">
                         <p class="text-xl"><%= joke %></p>
                     </div>
                 <% } %>
             </div>
         </div>
-    </section>
-    
-    
       
-      <!-- submit your jokes -->
-      <div id="fourth" class="max-w-lg mx-auto bg-white mt-10 shadow-md p-8 rounded-lg">
-        <h1 class="text-2xl font-bold mb-4">Wanna share a joke?</h1>
-        <form action="/submit#fourth" method="post" class="mb-4">
+    
+    
+       
+        
+        <!-- submit your jokes -->
+       <div id="fourth" class="max-w-lg mx-auto bg-white mt-10 shadow-md p-8 rounded-lg">
+         <h1 class="text-2xl font-bold mb-4">Wanna share a joke?</h1>
+         <form action="/submit#fourth" method="post" class="mb-4">
             <label for="title" class="block text-gray-700 font-medium mb-2">Username:</label>
             <input name="title" type="text" id="title" class="w-full bg-gray-100 border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500 mb-3">
     
@@ -171,122 +173,116 @@
             <textarea name="contents" id="contents" cols="30" rows="5" class="w-full resize-none bg-gray-100 border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500 mb-3">Please write your joke</textarea>
     
             <button type="submit" class="bg-indigo-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:bg-indigo-700 transition duration-300 ease-in-out">Submit</button>
-        </form>
-    </div>
+          </form>
+        </div>
     
       
-<!-- get collection of jokes -->
-<section id="fifth" class="text-gray-600 body-font bg-gray-100">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="lg:w-2/3 mx-auto">
-      <h1 class="text-4xl font-bold mb-8 text-center">My Collections</h1>
-      <form action="/getall#fifth" method="post" class="flex justify-center mb-8">
-        <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:bg-indigo-700 transition duration-300 ease-in-out">Get Jokes</button>
-      </form>
-      <% if(locals.myjoke) { %>
-        <div class="w-full bg-gray-100 border border-gray-300 rounded-md p-4">
-          <% myjoke.forEach(item => { %>
-            <p class="mb-4 text-center"><%= item.contents %></p>
-          <% }) %>
-        </div>
-      <% } else { %>
-        <p class="text-center">No jokes found.</p>
-      <% } %>
-    </div>
-  </div>
-</section>
+      
+                <!-- get collection of jokes -->
+          <div id="fifth" class="text-gray-600 body-font ">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="lg:w-2/3 mx-auto">
+                <h1 class="text-4xl font-bold mb-8 text-center">Community jokes Collection</h1>
+                <form action="/getall#fifth" method="post" class="flex justify-center mb-8">
+                  <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:bg-indigo-700 transition duration-300 ease-in-out">Get Jokes</button>
+                </form>
+                <% if(locals.myjoke) { %>
+                  <div class="w-full bg-gray-100 border border-gray-300 rounded-md p-4">
+                    <% myjoke.forEach(item => { %>
+                    <p class="mb-4 text-center"><%= item.contents %></p>
+                    <% }) %>
+                  </div>
+                    <% } else { %>
+                    <p class="text-center">No jokes found.</p>
+                  <% } %>
+              </div>
+            </div>
+          </div>
 
-
-
+      </div>
+    
 
 
       <!-- footer -->
-      <footer class="text-gray-600 body-font bg-gray-200">
+      <footer id="footer" class="text-gray-700 body-font bg-gray-200">
         <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
               </svg>
-              <span class="ml-3 text-xl">Tailblocks</span>
+              <span class="ml-3 text-xl">Laughtale</span>
             </a>
-            <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+            <p class="mt-2 text-sm text-gray-500">A joke website for happiness</p>
           </div>
           <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES OF JOKES</h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                Dark
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                Spooky
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                Christmas
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                pun
+                </li>
+                <li>
+                Miscellaneous
                 </li>
               </nav>
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">LANGUAGES</h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                English
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                German
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                portuguese
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                French
+                </li>
+                <li>
+                Spanish
+                </li>
+                <li>
+                Czech
                 </li>
               </nav>
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Special thanks to my friends</h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                Athrav joshi
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                Rohit sinha
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                Sai Aneesh
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                Raghav kanungo
                 </li>
               </nav>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                </li>
-              </nav>
-            </div>
+            
           </div>
         </div>
-        <div class="bg-gray-100">
+        <div class="bg-black">
           <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
-              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
+            <p class="text-white text-sm text-center sm:text-left">© 2024 Laughtale—
+              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-white ml-1" target="_blank">@utkarsh soni</a>
             </p>
             <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
               <a class="text-gray-500">
